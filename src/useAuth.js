@@ -19,7 +19,7 @@ function useAuth(code){
     })
     .catch((err)=>{
         console.log("errbc = ", err);
-        window.location="https://stupefied-tesla-5734b1.netlify.app/"
+        // window.location="https://stupefied-tesla-5734b1.netlify.app/"
     })
  }, [code])
 
