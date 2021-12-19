@@ -15,11 +15,11 @@ function useAuth(code){
         setAccessToken(res.data.accessToken)
         setRefreshToken(res.data.refreshToken)
         setExpiresIn(res.data.expiresIn)
-        window.history.pushState({}, null, "https://stupefied-tesla-5734b1.netlify.app")
+        window.history.pushState({}, null, "https://stupefied-tesla-5734b1.netlify.app/")
     })
     .catch((err)=>{
         console.log("errbc = ", err);
-        window.location="https://stupefied-tesla-5734b1.netlify.app"
+        window.location="https://stupefied-tesla-5734b1.netlify.app/"
     })
  }, [code])
 
@@ -34,7 +34,7 @@ function useAuth(code){
             })
         .catch((err)=>{
             console.log("err = ", err);
-            window.location="https://stupefied-tesla-5734b1.netlify.app"
+            window.location="https://stupefied-tesla-5734b1.netlify.app/"
             })
      }, (expiresIn-60)*1000)
      return ()=>clearInterval(timeInterval)
