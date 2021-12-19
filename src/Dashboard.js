@@ -70,6 +70,7 @@ function Dashboard(props){
 
     return(
         <Container className="d-flex flex-column py-2" style={{height: "100vh"}}>
+            <div>{props.code}</div>
             <Form.Control
                 type='search'
                 placeholder="Search Songs/Artists"
